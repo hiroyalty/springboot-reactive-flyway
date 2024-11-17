@@ -26,7 +26,7 @@ public class ReactiveAppApplication {
 				request.setFirstname(faker.name().firstName());
 				request.setLastname(faker.name().lastName());
 				request.setAge(faker.number().numberBetween(22, 45));
-				
+
 				customerService.save(request).subscribe();
 			}
 		};
